@@ -50,7 +50,7 @@
 
 0 * {
 	border: 1px solid red;
-} 
+}
 
 body {
 	background: url(../img/bg-noise.png);
@@ -395,8 +395,18 @@ textarea:focus {
 	#footer-content {
 		padding: 32px 0px;
 	}
-	
+
 	.shit {
-	padding: 0px !important;
-}
+		padding: 0px !important;
+	}
+
+	nav {
+		padding: 24px 0px;
+		z-index: 1000;
+		background: url(../img/bg-noise.png) #fff;
+	}
+
+	#categories-cards {
+		margin-top: 76px;
+	}
 }

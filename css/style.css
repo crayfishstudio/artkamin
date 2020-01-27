@@ -421,6 +421,10 @@ footer h4 {
 		width: 30%;
 		margin-bottom: 20px;
 	}
+	
+	#cat-top .row > div {
+		padding: 0px calc((100vw - 260px) / 12 + 20px) !important;
+	}
 }
 
 @media screen and (max-width: 576px) {
@@ -479,5 +483,13 @@ footer h4 {
 	.gallery div {
 	width: 100%;
 		margin-bottom: 20px;
+}
+	
+	#cat-top .row > div {
+		padding: 0px 20px !important;
+	}
+	
+	#cat-top {
+	padding-top: 76px;
 }
 }

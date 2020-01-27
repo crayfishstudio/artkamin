@@ -48,14 +48,15 @@
 	--almost-black: #333333;
 }
 
-/* * {
+0 * {
 	border: 1px solid red;
-} */
+} 
 
 body {
 	background: url(../img/bg-noise.png);
 	font-family: 'FuturaNew', sans-serif;
 }
+
 
 .row > [class*='col-'] {
 	padding-right: 10px;
@@ -69,6 +70,7 @@ body {
 .row > [class*="col-"]:last-child {
 	padding-right: 20px;
 }
+
 
 #bg-lines {
 	position: fixed;
@@ -142,7 +144,6 @@ nav {
 
 #lang-toggler:hover {
 	text-decoration: none;
-	transform: translateZ(5px);
 }
 
 #about-left {

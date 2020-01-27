@@ -320,6 +320,20 @@ footer h4 {
 	color: #fff;
 }
 
+#cat-top {
+	padding-top: 116px;
+}
+
+.gallery {
+	display: flex;
+	justify-content: space-between;
+}
+
+.gallery > div {
+	width: calc((100vw - 260px) / 4 + 40px);
+	margin-bottom: calc((100vw - 260px) / 24 + 30px)
+}
+
 @media screen and (max-width: 1200px) {
 	#categories-cards span {
 		font-size: 20px;
@@ -399,7 +413,14 @@ footer h4 {
 		height: 40vw;
 	}
 
+	.gallery {
+		padding: 0px calc((100vw - 260px) / 12 + 20px);
+	}
 
+	.gallery div {
+		width: 30%;
+		margin-bottom: 20px;
+	}
 }
 
 @media screen and (max-width: 576px) {
@@ -432,20 +453,31 @@ footer h4 {
 	#categories-cards {
 		margin-top: 76px;
 	}
-	
+
 	footer {
 		padding: 0px 0px !important;
 	}
-	
+
 	#footer-body {
-	padding: 32px 20px;
-}
-	
+		padding: 32px 20px;
+	}
+
 	#copyrights {
-	padding: 20px;
-}
-	
+		padding: 20px;
+	}
+
 	section {
 		margin-bottom: 40px;
 	}
+	
+	.gallery {
+	padding: 0px;
+		display: block;
+		margin: 0px;
+}
+	
+	.gallery div {
+	width: 100%;
+		margin-bottom: 20px;
+}
 }

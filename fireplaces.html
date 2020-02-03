@@ -8,9 +8,10 @@
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/zoom.css">
 	<link rel="shortcut icon" type="image/png" href="img/favicon.png">
 
-	<title>АртКамінь - Головна</title>
+	<title>АртКамінь - Каміни</title>
 </head>
 
 <body>
@@ -34,7 +35,7 @@
 				<a href="#" class="ml-md-2"><img src="img/lighttodark.svg"></a>
 			</div>
 			<div class="col-md-10 col-8 text-center">
-				<img src="img/logo.svg" width="150px">
+				<a href="index.html"><img src="img/logo.svg" width="150px"></a>
 			</div>
 			<div class="col-md-1 col-2 text-md-center text-right">
 				<a href="#" id="lang-toggler" class="mr-md-2">UA</a>
@@ -43,52 +44,14 @@
 	</nav>
 
 	<main>
-		<section class="container-fluid">
+		<section class="container-fluid" id="cat-top">
 			<div class="row justify-content-center">
-				<div class="col-sm-10">
-					<div id="categories-cards">
-						<div>
-							<a href="facades.html">
-								<div class="category-img" style="background-image: url(img/img-1.png)"></div>
-								<span>Фасади</span>
-							</a>
-						</div>
-						<div>
-							<a href="stairs.html">
-								<div class="category-img" style="background-image: url(img/chairs.png)"></div>
-								<span>Cходи</span>
-							</a>
-						</div>
-						<div>
-							<a href="fireplaces.html">
-								<div class="category-img" style="background-image: url(img/camins.png)"></div>
-								<span>Каміни</span>
-							</a>
-						</div>
-						<div>
-							<a href="balustrades.html">
-								<div class="category-img" style="background-image: url(img/balustrades.png)"></div>
-								<span>Балюстради</span>
-							</a>
-						</div>
-						<div>
-							<a href="framing.html">
-								<div class="category-img" style="background-image: url(img/frames.png)"></div>
-								<span>Обрамлення</span>
-							</a>
-						</div>
-					</div>
+				<div class="col-md-4 pr-md-0 text-center">
+					<img class="img-fluid" src="img/fireplace-img.png">
 				</div>
-			</div>
-		</section>
-
-		<section class="container-fluid px-0">
-			<div class="row no-gutters">
-				<div class="col-md-6" id="about-left">
-					<div style="background-image: url(img/amout-img.jpg)"></div>
-				</div>
-				<div class="col-md-6" id="about-right">
-					<h2>Про нас</h2>
+				<div class="col-md-1 pl-md-0"></div>
+				<div class="col-xl-4 col-md-5 pt-xl-5 pt-lg-4 mt-4 mt-md-0">
+					<h2>Каміни</h2>
 					<p>
 						Ми займаємось оздобленням фасадів будь-якої складності, будуємо SPA-комплекси та парилки.
 						<br><br>
@@ -99,38 +62,72 @@
 						Ми ніколи не будемо використовувати дешеві матеріали та аксесуари, щоб ви завжди були впевнені в кожній деталі, яка вас оточує.
 					</p>
 				</div>
+				<div class="col-xl-1"></div>
 			</div>
 		</section>
 
 		<section class="container-fluid">
-			<div class="row justify-content-center">
-				<div class="col-sm-10">
-					<h2>Чому ми?</h2>
-				</div>
-			</div>
 			<div class="row justify-content-between" id="why-us">
 				<div>
-					<h3>Досвід</h3>
 					<div class="why-us-img" style="background-image: url(img/experience.png)"></div>
 					<span>
 						Ми ніколи не будемо використовувати дешеві матеріали та аксесуари, щоб ви завжди були впевнені в кожній деталі, яка вас оточує.
 					</span>
 				</div>
 				<div>
-					<h3>Точність</h3>
 					<div class="why-us-img" style="background-image: url(img/accuracy.jpg)"></div>
 					<span>
 						Ми ніколи не будемо використовувати дешеві матеріали та аксесуари, щоб ви завжди були впевнені в кожній деталі, яка вас оточує.
 					</span>
 				</div>
 				<div>
-					<h3>Довговічність</h3>
 					<div class="why-us-img" style="background-image: url(img/longtime.jpg)"></div>
 					<span>
 						Ми ніколи не будемо використовувати дешеві матеріали та аксесуари, щоб ви завжди були впевнені в кожній деталі, яка вас оточує.
 					</span>
 				</div>
 			</div>
+		</section>
+
+		<section class="container-fluid">
+			<div class="row justify-content-center">
+				<div class="col-md-10">
+					<div class="gallery">
+						<div>
+							<img class="img-fluid" src="img/fireplaces/11.jpg" data-action="zoom">
+						</div>
+						<div>
+							<img class="img-fluid" src="img/fireplaces/12.jpg" data-action="zoom">
+						</div>
+						<div>
+							<img class="img-fluid" src="img/fireplaces/13.jpg" data-action="zoom">
+						</div>
+					</div>
+					<div class="gallery">
+						<div>
+							<img class="img-fluid" src="img/fireplaces/15.jpg" data-action="zoom">
+						</div>
+						<div>
+							<img class="img-fluid" src="img/fireplaces/31.JPG" data-action="zoom">
+						</div>
+						<div>
+							<img class="img-fluid" src="img/fireplaces/viber%20image%D1%82.jpg" data-action="zoom">
+						</div>
+					</div>
+					<div class="gallery">
+						<div>
+							<img class="img-fluid" src="img/fireplaces/33.jpg" data-action="zoom">
+						</div>
+						<div>
+							<img class="img-fluid" src="img/fireplaces/14.jpg" data-action="zoom">
+						</div>
+						<div>
+							<img class="img-fluid" src="img/fireplaces/23.jpg" data-action="zoom">
+						</div>
+					</div>
+				</div>
+			</div>
+
 		</section>
 	</main>
 
@@ -196,7 +193,10 @@
 		<a href="https://crayfish.studio" target="_blank">By Crayfish Studio</a>
 	</div>
 
+
 	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<script src="js/transition.js"></script>
+	<script src="js/zoom.js"></script>
 </body></html>

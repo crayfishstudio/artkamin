@@ -46,14 +46,12 @@
 	--tr: all .4s;
 	--tr-l: all 0.3s cubic-bezier(0.77, 0.2, 0.05, 1.0);
 	--almost-black: #333333;
-}
-
-0 * {
-	border: 1px solid red;
+	--white;
 }
 
 body {
-	background: url(../img/bg-noise.png);
+	background-color: var(--white);
+	background-image: url(../img/bg-noise.png);
 	font-family: 'FuturaNew', sans-serif;
 }
 
@@ -81,7 +79,7 @@ body {
 	width: 100%;
 }
 
-#bg-lines [class*="col-"] {
+#bg-lines [class*="col-"]:not(:first-child) {
 	border-left: 1px solid #F0F0F0;
 	height: 100vh;
 	z-index: -1000;
@@ -130,7 +128,7 @@ nav {
 	font-weight: 400;
 	font-size: 24px;
 	line-height: 28px;
-	color: #fff;
+	color: var(--white);
 	background-color: var(--dark-green);
 	padding: 20px;
 	transition: var(--tr);
@@ -163,7 +161,7 @@ nav {
 }
 
 #about-right {
-	background: #fff;
+	background: var(--white);
 	padding: 100px calc((100vw - 260px) / 12 + 40px) 100px calc((100vw - 260px) / 12 + 30px);
 }
 
@@ -237,7 +235,7 @@ section {
 #form-container h4 {
 	font-size: 24px;
 	line-height: 34px;
-	color: #fff;
+	color: var(--white);
 	margin-bottom: 32px;
 }
 
@@ -247,12 +245,12 @@ textarea {
 	border-radius: 0px;
 	width: 100% !important;
 	border: none;
-	border-bottom: 1px solid #fff;
+	border-bottom: 1px solid var(--white);
 	padding: 16px 8px;
 	font-weight: 300;
 	font-size: 20px;
 	line-height: 22px;
-	color: #fff;
+	color: var(--white);
 	display: inline-block;
 
 }
@@ -260,7 +258,7 @@ textarea {
 input:focus,
 textarea:focus {
 	outline: none;
-	border-bottom: 2px solid #fff;
+	border-bottom: 2px solid var(--white);
 	margin-bottom: -1px;
 }
 
@@ -270,7 +268,7 @@ textarea:focus {
 	text-align: center;
 	font-size: 24px;
 	line-height: 28px;
-	color: #fff;
+	color: var(--white);
 	background-color: var(--light-green);
 	padding: 20px 60px;
 	transition: var(--tr);
@@ -278,7 +276,7 @@ textarea:focus {
 
 .btn-footer:hover {
 	color: var(--dark-green);
-	background-color: #fff;
+	background-color: var(--white);
 	text-decoration: none;
 }
 
@@ -286,12 +284,12 @@ textarea:focus {
 	font-weight: 300;
 	font-size: 24px;
 	line-height: 34px;
-	color: #fff;
+	color: var(--white);
 }
 
 #copyrights {
 	padding: 32px calc((100vw - 260px) / 12 + 40px);
-	background: #fff;
+	background: var(--white);
 	position: relative;
 	display: flex;
 	justify-content: space-between;
@@ -317,7 +315,7 @@ footer {
 footer h4 {
 	font-size: 24px;
 	line-height: 34px;
-	color: #fff;
+	color: var(--white);
 }
 
 #cat-top {
@@ -451,7 +449,7 @@ footer h4 {
 	nav {
 		padding: 24px 0px;
 		z-index: 1000;
-		background: url(../img/bg-noise.png) #fff;
+		background: url(../img/bg-noise.png) var(--white);
 	}
 
 	#categories-cards {
